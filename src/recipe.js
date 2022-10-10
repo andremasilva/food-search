@@ -3,7 +3,7 @@ import style from './recipe.module.css';
 
 const Recipe = ({ title, image, ingredients }) => {
     return (
-        <div className={style.recipe}>
+        <section className={style.recipe}>
             <h1>{title}</h1>
             <ul>
                 {ingredients.map(ingredients => (
@@ -11,7 +11,7 @@ const Recipe = ({ title, image, ingredients }) => {
                 ))}
             </ul>
             <img className={style.recipe} src={image} alt="" />
-        </div>
+        </section>
     )
 }
 
